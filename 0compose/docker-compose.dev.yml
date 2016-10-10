@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+
+  server:
+    build:
+      context: ../source
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../source:/usr/src/app
+    ports:
+      - 3000:3000
+      - 9000:9000
+
+# networks:
+  # back-tier:
+  # front-tier:
+# volumes:
+  # db-data:

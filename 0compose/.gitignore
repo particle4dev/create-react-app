@@ -1,0 +1,5 @@
+data/mongo
+data/redis
+
+# Thumbnails
+**/._*
